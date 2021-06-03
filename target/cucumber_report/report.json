@@ -1,0 +1,113 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2021-06-03T15:21:43.023Z",
+        "before": [
+          {
+            "result": {
+              "duration": 6946055467,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.beforeScenario()"
+            }
+          }
+        ],
+        "line": 5,
+        "name": "To validate login functionality",
+        "description": "",
+        "id": "to-validate-facebook-application;to-validate-login-functionality",
+        "after": [
+          {
+            "result": {
+              "duration": 1261939214,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.afterScenario()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 5364415669,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user launches facebook application",
+            "match": {
+              "location": "StepDefinition.user_launches_facebook_application()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 947978503,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user enters valid credentials",
+            "match": {
+              "location": "StepDefinition.user_enters_valid_credentials(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "username",
+                  "Kalidass"
+                ]
+              },
+              {
+                "cells": [
+                  "password",
+                  "12345678"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 429850,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "user should be navigated to home page",
+            "match": {
+              "location": "StepDefinition.user_should_be_navigated_to_home_page()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@tag"
+          },
+          {
+            "name": "@tag1"
+          }
+        ]
+      }
+    ],
+    "name": "To validate facebook application",
+    "description": "",
+    "id": "to-validate-facebook-application",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/Cucumber.feature",
+    "tags": [
+      {
+        "name": "@tag",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
